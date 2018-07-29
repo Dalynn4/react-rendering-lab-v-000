@@ -29,14 +29,7 @@ describe('Rating', () => {
   });
 });
 
-describe('Circle', () => {
-  it('does not re-render when the same color is passed in twice', () => {
-    const spy = sinon.spy(Circle.prototype, 'render')
-    const wrapper = shallow(<Circle color='red' />);
-    wrapper.setProps({ color: 'red' });
-    expect(spy.calledOnce).to.be.true;
-  });
-});
+
 
 describe('Animation', () => {
   it('calls showLoadingBar() in componentWillUpdate', () => {
