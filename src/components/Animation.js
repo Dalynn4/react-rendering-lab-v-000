@@ -10,7 +10,7 @@ class Animation extends React.Component {
   }
 
 componentWillUpdate(nextProps, nextState) {
-  showLoadingBar();
+  this.showLoadingBar();
 }
 
   getNewCat = () => {
